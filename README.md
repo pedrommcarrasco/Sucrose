@@ -4,8 +4,7 @@
 >
 > "the type of sugar that exists naturally in most plants that grow on land"
 
-My everyday sugar. 🍬
-Feel free to use it as a framework or simply add a specific file to your project.
+🍬 My everyday sugar. Feel free to use it as a framework or simply add a specific file to your project.
 
 [![CocoaPods](https://img.shields.io/cocoapods/v/Sucrose.svg)](https://cocoapods.org/pods/Sucrose)
 
