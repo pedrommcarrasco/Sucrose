@@ -12,7 +12,7 @@ public final class Weak<T> where T: AnyObject {
     
     private(set) weak var value: T?
     
-    init(value: T?) {
+    public init(value: T?) {
         self.value = value
     }
 }
