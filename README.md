@@ -55,7 +55,8 @@ let UIButton(image: UIImage(named: "test")) // Sets the image of the UIButton's 
 #### UIStackView
 
 ```swift
-// Add multiple views to a UIStackView's arragedSubviews. Supports variadic parameters or an array of UIView
+// Add multiple views to a UIStackView's arragedSubviews. 
+// Supports variadic parameters or an array of UIView
 stackView.addArrangedSubviews(viewA, viewB, viewC)
 stackView.addArrangedSubviews([viewA, viewB, viewC])
 ```
@@ -63,7 +64,8 @@ stackView.addArrangedSubviews([viewA, viewB, viewC])
 #### UIView
 
 ```swift
-// Add multiple views to a UIView's subviews. Supports variadic parameters or an array of UIView
+// Add multiple views to a UIView's subviews. 
+// Supports variadic parameters or an array of UIView
 view.addSubviews(viewA, viewB, viewC)
 view.addSubviews([viewA, viewB, viewC])
 
@@ -74,7 +76,8 @@ view.optimize // Sets clipsToBounds and isOpaque to true
 #### UIViewController
 
 ```swift
-// Add multiple UIViewControllers as children of another. Supports variadic parameters or an array of UIViewController
+// Add multiple UIViewControllers as children of another. 
+// Supports variadic parameters or an array of UIViewController
 viewController.addChilds(headerViewController, listViewController)
 viewController.addChilds([headerViewController, listViewController])
 
