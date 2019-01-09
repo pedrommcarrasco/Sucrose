@@ -152,8 +152,8 @@
 				20D4D27421E68E6E00A3F80A /* OptionalUnitTests.swift */,
 				20D4D27621E68F9200A3F80A /* UIButtonUnitTests.swift */,
 				20D4D27821E6910D00A3F80A /* UIStackViewUnitTests.swift */,
-				20D4D27A21E692EA00A3F80A /* UIViewUnitTests.swift */,
 				20D4D27C21E6940000A3F80A /* UIViewControllerUnitTests.swift */,
+				20D4D27A21E692EA00A3F80A /* UIViewUnitTests.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
