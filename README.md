@@ -87,7 +87,7 @@ headerViewController.remove()
 
 ### Objects
 
-To-write...
+Soon.
 
 
 ## Instalation 📦
