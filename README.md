@@ -37,13 +37,13 @@ var string: String?
 var isValid: Bool
 
 string = nil
-isValid = string.isNilOrEmpty // would be true
+isValid = string.isNilOrEmpty // true
 
 string = ""
-isValid = string.isNilOrEmpty // would be true
+isValid = string.isNilOrEmpty // true
 
 string = "ABC"
-isValid = string.isNilOrEmpty // would be false
+isValid = string.isNilOrEmpty // false
 ```
 
 #### UIButton
