@@ -15,7 +15,6 @@
 		20D4D25D21E67F5C00A3F80A /* UIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D4D25C21E67F5C00A3F80A /* UIView+Hierarchy.swift */; };
 		20D4D25F21E67FAA00A3F80A /* UIViewController+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D4D25E21E67FAA00A3F80A /* UIViewController+Hierarchy.swift */; };
 		20D4D26221E6800900A3F80A /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D4D26121E6800900A3F80A /* Weak.swift */; };
-		20D4D26621E6819100A3F80A /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D4D26521E6819100A3F80A /* Observable.swift */; };
 		20D4D26821E6858600A3F80A /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D4D26721E6858600A3F80A /* String+Localizable.swift */; };
 		20D4D26A21E6860500A3F80A /* Optional+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D4D26921E6860500A3F80A /* Optional+String.swift */; };
 		20D4D26C21E688F700A3F80A /* UIView+Optimize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D4D26B21E688F700A3F80A /* UIView+Optimize.swift */; };
@@ -50,7 +49,6 @@
 		20D4D25C21E67F5C00A3F80A /* UIView+Hierarchy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Hierarchy.swift"; sourceTree = "<group>"; };
 		20D4D25E21E67FAA00A3F80A /* UIViewController+Hierarchy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Hierarchy.swift"; sourceTree = "<group>"; };
 		20D4D26121E6800900A3F80A /* Weak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
-		20D4D26521E6819100A3F80A /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		20D4D26721E6858600A3F80A /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
 		20D4D26921E6860500A3F80A /* Optional+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+String.swift"; sourceTree = "<group>"; };
 		20D4D26B21E688F700A3F80A /* UIView+Optimize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Optimize.swift"; sourceTree = "<group>"; };
@@ -139,7 +137,6 @@
 			isa = PBXGroup;
 			children = (
 				20D4D26121E6800900A3F80A /* Weak.swift */,
-				20D4D26521E6819100A3F80A /* Observable.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -272,7 +269,6 @@
 				20D4D25D21E67F5C00A3F80A /* UIView+Hierarchy.swift in Sources */,
 				20D4D25721E67ED000A3F80A /* NSObject+Create.swift in Sources */,
 				20D4D26C21E688F700A3F80A /* UIView+Optimize.swift in Sources */,
-				20D4D26621E6819100A3F80A /* Observable.swift in Sources */,
 				20D4D25921E67F0600A3F80A /* UIButton+Init.swift in Sources */,
 				20D4D26221E6800900A3F80A /* Weak.swift in Sources */,
 				20D4D25F21E67FAA00A3F80A /* UIViewController+Hierarchy.swift in Sources */,
