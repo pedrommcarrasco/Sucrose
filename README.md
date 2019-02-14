@@ -71,6 +71,33 @@ view.addSubviews([viewA, viewB, viewC])
 
 // Optimize (inspired by @hyperoslo)
 view.optimize // Sets clipsToBounds and isOpaque to true
+
+// Get the view name to register as an identifier or debug
+print(CellExample.name) // String(describing:)
+register(CellExample.self, forCellWithReuseIdentifier: CellExample.name)
+
+// Circular View
+viewA.asCircle()
+```
+
+#### UITableView
+
+```swift
+// Register Cell
+tableView.register(ExampleCell.self)
+
+// Dequeue Cell
+let exampleCell = tableView.dequeueCell(for: indexPath, as: ExampleCell.self)
+```
+
+#### UICollectionView
+
+```swift
+// Register Cell
+collectionView(ExampleCell.self)
+
+// Dequeue Cell
+let exampleCell = collectionView(for: indexPath, as: ExampleCell.self)
 ```
 
 #### UIViewController
@@ -84,11 +111,6 @@ viewController.addChilds([headerViewController, listViewController])
 // Remove an UIViewController from its parent
 headerViewController.remove()
 ```
-
-### Objects
-
-Soon.
-
 
 ## Instalation 📦
 
