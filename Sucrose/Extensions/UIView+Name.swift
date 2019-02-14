@@ -10,5 +10,5 @@ import UIKit
 
 extension UIView {
 
-    static var name: String { return String(describing: self) }
+    public static var name: String { return String(describing: self) }
 }

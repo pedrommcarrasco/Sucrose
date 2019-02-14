@@ -10,11 +10,11 @@ import UIKit
 
 extension UICollectionView {
 
-    func register<T: UICollectionViewCell>(_: T.Type) {
+    public func register<T: UICollectionViewCell>(_: T.Type) {
         register(T.self, forCellWithReuseIdentifier: T.name)
     }
 
-    func dequeueCell<T: UICollectionViewCell>(for indexPath: IndexPath, as type: T.Type) -> T {
+    public func dequeueCell<T: UICollectionViewCell>(for indexPath: IndexPath, as type: T.Type) -> T {
         guard let cell = self.dequeueReusableCell(withReuseIdentifier: type.name, for: indexPath) as? T else {
             fatalError("Unknown Cell at \(indexPath)")
         }
