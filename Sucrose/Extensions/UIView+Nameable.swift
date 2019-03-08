@@ -1,5 +1,5 @@
 //
-//  UIView+Name.swift
+//  UIView+Nameable.swift
 //  Sucrose
 //
 //  Created by Pedro Carrasco on 14/02/2019.
@@ -8,7 +8,4 @@
 
 import UIKit
 
-extension UIView {
-
-    public static var name: String { return String(describing: self) }
-}
+extension UIView: Nameable { }
