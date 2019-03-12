@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.swift_version = "4.2"
   s.name         = "Sucrose"
-  s.version      = "2.3.0"
+  s.version      = "2.3.1"
   s.summary      = "🍬 Everyday sugar"
   s.description  = "Collection of handy methods & objects"
 
