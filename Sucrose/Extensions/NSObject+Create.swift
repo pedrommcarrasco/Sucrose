@@ -8,9 +8,9 @@
 
 import Foundation
 
-extension NSObject {
+public extension NSObject {
     
-    public static func create<T>(_ setup: (T) -> Void) -> T where T: NSObject {
+    static func create<T>(_ setup: (T) -> Void) -> T where T: NSObject {
         let object = T()
         setup(object)
         return object

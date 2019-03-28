@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension UIViewController {
+public extension UIViewController {
     
-    public func addChilds(_ viewControllers: UIViewController ...) {
+    func addChilds(_ viewControllers: UIViewController ...) {
         viewControllers.forEach {
             self.addChild($0)
             view.addSubview($0.view)
@@ -18,7 +18,7 @@ extension UIViewController {
         }
     }
     
-    public func addChilds(_ viewControllers: [UIViewController]) {
+    func addChilds(_ viewControllers: [UIViewController]) {
         viewControllers.forEach {
             self.addChild($0)
             view.addSubview($0.view)
@@ -26,7 +26,7 @@ extension UIViewController {
         }
     }
     
-    public func remove() {
+    func remove() {
         willMove(toParent: nil)
         removeFromParent()
         view.removeFromSuperview()

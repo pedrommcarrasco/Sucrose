@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension UIButton {
+public extension UIButton {
     
-    public convenience init(image: UIImage?) {
+    convenience init(image: UIImage?) {
         self.init(frame: .zero)
         setImage(image, for: .normal)
     }

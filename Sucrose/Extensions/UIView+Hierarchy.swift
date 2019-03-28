@@ -8,13 +8,13 @@
 
 import UIKit
 
-extension UIView {
+public extension UIView {
     
-    public func addSubviews(_ views: UIView ...) {
+    func addSubviews(_ views: UIView ...) {
         views.forEach { self.addSubview($0) }
     }
     
-    public func addSubviews(_ views: [UIView]) {
+    func addSubviews(_ views: [UIView]) {
         views.forEach { self.addSubview($0) }
     }
 }
