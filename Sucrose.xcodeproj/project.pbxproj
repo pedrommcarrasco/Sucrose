@@ -25,6 +25,12 @@
 		20D4D27921E6910D00A3F80A /* UIStackViewUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D4D27821E6910D00A3F80A /* UIStackViewUnitTests.swift */; };
 		20D4D27B21E692EA00A3F80A /* UIViewUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D4D27A21E692EA00A3F80A /* UIViewUnitTests.swift */; };
 		20D4D27D21E6940000A3F80A /* UIViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D4D27C21E6940000A3F80A /* UIViewControllerUnitTests.swift */; };
+		531857812215A59800009D11 /* UICollectionView+Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531857802215A59800009D11 /* UICollectionView+Cell.swift */; };
+		531857832215A5D700009D11 /* UIView+Nameable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531857822215A5D700009D11 /* UIView+Nameable.swift */; };
+		531857852215AF6C00009D11 /* UITableView+Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531857842215AF6C00009D11 /* UITableView+Cell.swift */; };
+		531857872215B5BC00009D11 /* UIView+Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531857862215B5BC00009D11 /* UIView+Shape.swift */; };
+		537A660D2232AFFF00D9C2B7 /* Nameable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537A660C2232AFFF00D9C2B7 /* Nameable.swift */; };
+		537A660F2232B14800D9C2B7 /* UIViewController+Nameable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537A660E2232B14800D9C2B7 /* UIViewController+Nameable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +65,12 @@
 		20D4D27821E6910D00A3F80A /* UIStackViewUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewUnitTests.swift; sourceTree = "<group>"; };
 		20D4D27A21E692EA00A3F80A /* UIViewUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewUnitTests.swift; sourceTree = "<group>"; };
 		20D4D27C21E6940000A3F80A /* UIViewControllerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerUnitTests.swift; sourceTree = "<group>"; };
+		531857802215A59800009D11 /* UICollectionView+Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Cell.swift"; sourceTree = "<group>"; };
+		531857822215A5D700009D11 /* UIView+Nameable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Nameable.swift"; sourceTree = "<group>"; };
+		531857842215AF6C00009D11 /* UITableView+Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Cell.swift"; sourceTree = "<group>"; };
+		531857862215B5BC00009D11 /* UIView+Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shape.swift"; sourceTree = "<group>"; };
+		537A660C2232AFFF00D9C2B7 /* Nameable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nameable.swift; sourceTree = "<group>"; };
+		537A660E2232B14800D9C2B7 /* UIViewController+Nameable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Nameable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,7 @@
 		20D4D23821E67CEF00A3F80A /* Sucrose */ = {
 			isa = PBXGroup;
 			children = (
+				537A660B2232AFA800D9C2B7 /* Protocols */,
 				20D4D26021E67FFD00A3F80A /* Objects */,
 				20D4D25221E67E9900A3F80A /* Extensions */,
 				20D4D23A21E67CEF00A3F80A /* Info.plist */,
@@ -125,10 +138,15 @@
 				20D4D26921E6860500A3F80A /* Optional+String.swift */,
 				20D4D26721E6858600A3F80A /* String+Localizable.swift */,
 				20D4D25821E67F0600A3F80A /* UIButton+Init.swift */,
+				531857802215A59800009D11 /* UICollectionView+Cell.swift */,
 				20D4D25A21E67F3D00A3F80A /* UIStackView+Hierarchy.swift */,
+				531857842215AF6C00009D11 /* UITableView+Cell.swift */,
 				20D4D25C21E67F5C00A3F80A /* UIView+Hierarchy.swift */,
+				531857822215A5D700009D11 /* UIView+Nameable.swift */,
 				20D4D26B21E688F700A3F80A /* UIView+Optimize.swift */,
+				531857862215B5BC00009D11 /* UIView+Shape.swift */,
 				20D4D25E21E67FAA00A3F80A /* UIViewController+Hierarchy.swift */,
+				537A660E2232B14800D9C2B7 /* UIViewController+Nameable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -153,6 +171,14 @@
 				20D4D27A21E692EA00A3F80A /* UIViewUnitTests.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		537A660B2232AFA800D9C2B7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				537A660C2232AFFF00D9C2B7 /* Nameable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,14 +290,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				20D4D25121E67E5600A3F80A /* Collection+SafeIndex.swift in Sources */,
+				537A660D2232AFFF00D9C2B7 /* Nameable.swift in Sources */,
+				531857812215A59800009D11 /* UICollectionView+Cell.swift in Sources */,
 				20D4D26821E6858600A3F80A /* String+Localizable.swift in Sources */,
 				20D4D25D21E67F5C00A3F80A /* UIView+Hierarchy.swift in Sources */,
 				20D4D25721E67ED000A3F80A /* NSObject+Create.swift in Sources */,
+				531857852215AF6C00009D11 /* UITableView+Cell.swift in Sources */,
+				537A660F2232B14800D9C2B7 /* UIViewController+Nameable.swift in Sources */,
 				20D4D26C21E688F700A3F80A /* UIView+Optimize.swift in Sources */,
 				20D4D25921E67F0600A3F80A /* UIButton+Init.swift in Sources */,
 				20D4D26221E6800900A3F80A /* Weak.swift in Sources */,
 				20D4D25F21E67FAA00A3F80A /* UIViewController+Hierarchy.swift in Sources */,
+				531857832215A5D700009D11 /* UIView+Nameable.swift in Sources */,
 				20D4D25B21E67F3D00A3F80A /* UIStackView+Hierarchy.swift in Sources */,
+				531857872215B5BC00009D11 /* UIView+Shape.swift in Sources */,
 				20D4D26A21E6860500A3F80A /* Optional+String.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,7 +10,7 @@ import Foundation
 
 public final class Weak<T> where T: AnyObject {
     
-    private(set) weak var value: T?
+    public private(set) weak var value: T?
     
     public init(value: T?) {
         self.value = value
