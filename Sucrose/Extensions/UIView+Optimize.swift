@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension UIView {
+public extension UIView {
     
-    public func optimize() {
+    func optimize() {
         clipsToBounds = true
         isOpaque = true
     }
