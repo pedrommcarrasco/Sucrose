@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension UIView {
+public extension UIView {
 
-    public func asCircle() {
+    func asCircle() {
         layer.cornerRadius = min(frame.size.height, frame.size.width) / 2.0
         layer.masksToBounds = true
     }
