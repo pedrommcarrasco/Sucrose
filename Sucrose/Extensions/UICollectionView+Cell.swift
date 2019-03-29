@@ -14,7 +14,7 @@ public extension UICollectionView {
         register(T.self, forCellWithReuseIdentifier: T.name)
     }
 
-    func dequeue<T: UICollectionViewCell>(for indexPath: IndexPath, as type: T.Type) -> T {
+    func dequeue<T: UICollectionViewCell>(_ type: T.Type, for indexPath: IndexPath) -> T {
         guard let cell = self.dequeueReusableCell(withReuseIdentifier: type.name, for: indexPath) as? T else {
             fatalError("Unknown Cell at \(indexPath)")
         }
