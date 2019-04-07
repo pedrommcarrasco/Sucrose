@@ -18,17 +18,17 @@ public extension UITableView {
         register(T.self, forHeaderFooterViewReuseIdentifier: T.name)
     }
 
-    func dequeue<T: UITableViewCell>(_ type: T.Type, in indexPath: IndexPath) -> T? {
+    func dequeue<T: UITableViewCell>(_ type: T.Type, in indexPath: IndexPath) -> T {
         guard let cell = self.dequeueReusableCell(withIdentifier: type.name, for: indexPath) as? T else {
-            return nil
+            fatalError("Unable to dequeue \(T.name)")
         }
 
         return cell
     }
     
-    func dequeue<T: UITableViewHeaderFooterView>(_ type: T.Type) -> T? {
+    func dequeue<T: UITableViewHeaderFooterView>(_ type: T.Type) -> T {
         guard let view = self.dequeueReusableHeaderFooterView(withIdentifier: T.name) as? T else {
-            return nil
+            fatalError("Unable to dequeue \(T.name)")
         }
         
         return view
