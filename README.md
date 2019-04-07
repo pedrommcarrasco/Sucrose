@@ -112,6 +112,15 @@ viewController.addChilds([headerViewController, listViewController])
 headerViewController.remove()
 ```
 
+#### UIEdgeInsets
+
+```swift
+// Convinient initializers
+let insetsA = UIEdgeInsets(vertical: 10) // ((top: 10, left: 0, bottom: 10, right: 0)
+let insetsA = UIEdgeInsets(right: 10) // ((top: 0, left: 0, bottom: 0, right: 10)
+```
+
+
 ## Instalation 📦
 
 Sucrose is available through [CocoaPods](https://cocoapods.org/pods/Sucrose). To do so, add the following line to your Podfile:

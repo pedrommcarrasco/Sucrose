@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		203FFFB8225A1C25008D8334 /* UIEdgeInsets+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203FFFB7225A1C25008D8334 /* UIEdgeInsets+Init.swift */; };
 		209692162252C57A007EF9DB /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209692152252C57A007EF9DB /* Observable.swift */; };
 		20D4D24021E67CEF00A3F80A /* Sucrose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D4D23621E67CEF00A3F80A /* Sucrose.framework */; };
 		20D4D25121E67E5600A3F80A /* Collection+SafeIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D4D25021E67E5600A3F80A /* Collection+SafeIndex.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		203FFFB7225A1C25008D8334 /* UIEdgeInsets+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Init.swift"; sourceTree = "<group>"; };
 		209692152252C57A007EF9DB /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		20D4D23621E67CEF00A3F80A /* Sucrose.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sucrose.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D4D23A21E67CEF00A3F80A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				531857862215B5BC00009D11 /* UIView+Shape.swift */,
 				20D4D25E21E67FAA00A3F80A /* UIViewController+Hierarchy.swift */,
 				537A660E2232B14800D9C2B7 /* UIViewController+Nameable.swift */,
+				203FFFB7225A1C25008D8334 /* UIEdgeInsets+Init.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				203FFFB8225A1C25008D8334 /* UIEdgeInsets+Init.swift in Sources */,
 				20D4D25121E67E5600A3F80A /* Collection+SafeIndex.swift in Sources */,
 				537A660D2232AFFF00D9C2B7 /* Nameable.swift in Sources */,
 				531857812215A59800009D11 /* UICollectionView+Cell.swift in Sources */,
