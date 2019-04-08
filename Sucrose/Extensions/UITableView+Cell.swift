@@ -26,9 +26,17 @@ public extension UITableView {
         return cell
     }
     
-    func dequeue<T: UITableViewHeaderFooterView>(_ type: T.Type) -> T {
+    func dequeue<T: UITableViewCell>(_ type: T.Type) -> T? {
+        guard let cell = self.dequeueReusableCell(withIdentifier: type.name) as? T else {
+            return nil
+        }
+        
+        return cell
+    }
+    
+    func dequeue<T: UITableViewHeaderFooterView>(_ type: T.Type) -> T? {
         guard let view = self.dequeueReusableHeaderFooterView(withIdentifier: T.name) as? T else {
-            fatalError("Unable to dequeue \(T.name)")
+            return nil
         }
         
         return view
