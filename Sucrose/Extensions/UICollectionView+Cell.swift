@@ -22,17 +22,17 @@ public extension UICollectionView {
         }
     }
 
-    func register<T: UICollectionViewCell>(_: T.Type) {
-        register(T.self, forCellWithReuseIdentifier: T.name)
+    func register<T: UICollectionViewCell>(_ type: T.Type) {
+        register(T.self, forCellWithReuseIdentifier: type.name)
     }
     
-    func register<T: UICollectionReusableView>(_: T.Type, as kind: SupplementaryViewKind) {
-        register(T.self, forSupplementaryViewOfKind: kind.value, withReuseIdentifier: T.name)
+    func register<T: UICollectionReusableView>(_ type: T.Type, as kind: SupplementaryViewKind) {
+        register(T.self, forSupplementaryViewOfKind: kind.value, withReuseIdentifier: type.name)
     }
 
     func dequeue<T: UICollectionViewCell>(_ type: T.Type, in indexPath: IndexPath) -> T {
         guard let cell = dequeueReusableCell(withReuseIdentifier: type.name, for: indexPath) as? T else {
-            fatalError("Unable to dequeue \(T.name)")
+            fatalError("Unable to dequeue \(type.name)")
         }
     
         return cell
@@ -40,8 +40,8 @@ public extension UICollectionView {
     
     func dequeue<T: UICollectionReusableView>(_ type: T.Type, in indexPath: IndexPath, as kind: SupplementaryViewKind) -> T {
 
-        guard let view = dequeueReusableSupplementaryView(ofKind: kind.value, withReuseIdentifier: T.name, for: indexPath) as? T else {
-            fatalError("Unable to dequeue \(T.name)")
+        guard let view = dequeueReusableSupplementaryView(ofKind: kind.value, withReuseIdentifier: type.name, for: indexPath) as? T else {
+            fatalError("Unable to dequeue \(type.name)")
         }
         
         return view
