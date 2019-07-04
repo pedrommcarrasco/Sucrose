@@ -12,13 +12,21 @@ public final class Observable<T> {
     public typealias Observer = (T) -> ()
     
     public var value: T {
-        didSet { observer?(value) }
+        didSet {
+            guard let queue = queue else { return emit(value) }
+            queue.async { [weak self] in
+                guard let self = self else { return }
+                self.emit(self.value)
+            }
+        }
     }
     
     private var observer: Observer?
+    private var queue: DispatchQueue?
     
-    public init(_ value: T) {
+    public init(_ value: T, emitOn queue: DispatchQueue? = nil) {
         self.value = value
+        self.queue = queue
     }
 }
 
@@ -26,6 +34,13 @@ extension Observable {
     
     public func subscribe(_ observer: Observer?) {
         self.observer = observer
+        observer?(value)
+    }
+}
+
+private extension Observable {
+
+    func emit(_ value: T) {
         observer?(value)
     }
 }
