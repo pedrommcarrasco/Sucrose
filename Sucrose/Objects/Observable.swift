@@ -24,7 +24,7 @@ public final class Observable<T> {
     private var observer: Observer?
     private var queue: DispatchQueue?
     
-    public init(_ value: T, emitOn queue: DispatchQueue? = nil) {
+    public init(_ value: T, dispachOn queue: DispatchQueue? = nil) {
         self.value = value
         self.queue = queue
     }
